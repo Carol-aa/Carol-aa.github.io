@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	cursor: url(../img/蛇.cur), auto;
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-selecct: none;
+	-ms-overflow-style: none;
+	scrollbar-width:none;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body,
+html {
+	background-color: rgb(81, 149, 221);
+}
+
+.setArea {
+	width: 100%;
+	height: 48px;
+	background-color: #2d2d2d;
+	border-radius: 0 0 10px 10px;
+}
+
+.setArea .name {
+	float: left;
+	margin-left: 20px;
+	padding: 10px 6px;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+	transition: 0.2s;
+}
+
+.setArea .name a {
+	color: #EAEAEA;
+}
+
+.setArea .name:hover {
+	transform: translateX(-3px);
+}
+
+.setArea .back {
+	position: absolute;
+	top: 8px;
+	left: 164px;
+	width: 80px;
+	height: 30px;
+	background: url(../fonts/箭头.svg) no-repeat;
+}
+
+.setArea .score  {
+	float: right;
+	margin-right: 2px;
+	padding: 12.5px 6px;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.setArea .scoreShow {
+	float: right;
+	margin-right: 20px;
+	padding: 12.5px 2px;
+	font-size: 16px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.setArea ul {
+	float: right;
+	margin-right: 10px;
+}
+
+.setArea li {
+	float: left;
+	width: 24px;
+	height: 24px;
+}
+
+.sound0 {
+	padding: 20px 20px 28px 35px;
+	margin-right: 15px;
+	background: url(../fonts/哟西声音关闭%20.svg) no-repeat 17px 12.5px;
+	transition: 0.3s;
+}
+
+.sound0 .smallTip {
+	position: relative;
+	display: none;
+	width: 280px;
+	height: 50px;
+	z-index: 3;
+	top: -15px;
+	right: 260px;
+	border-radius: 7px;
+	font-size: 20px;
+	line-height: 40px;
+	padding-left: 3px;
+	font-weight: 800;
+	color: #ffffff;
+}
+
+.sound {
+	background: url(../fonts/游戏声音%20.svg) no-repeat 17px 12.5px;
+}
+ 
+.content{
+	position: relative;
+	width: 1240px;
+	height: 640px;
+	margin: 0px auto;
+}
+.btn{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	/* background-color: rgba(0, 0, 0, 0.3); */
+	z-index: 2;
+}
+.btn button{
+	background: none;
+	border: none;
+	background-size: 100% 100%;
+
+	cursor: pointer;
+	outline: none;
+
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.startBtn button{
+	width: 200px;
+	height: 80px;
+	background-image: url(../img/startGame.png);
+	margin-left: -100px;
+	margin-top: -40px;
+}
+
+.pauseBtn{
+	display: none;
+}
+.pauseBtn button{
+	width: 70px;
+	height: 70px;
+	background-image: url(../img/start.png);
+	margin-left: -35px;
+	margin-top: -35px;
+}
+
+/* snakeWrap */
+#snakeWrap{
+	width: 1240px;
+	height: 640px;
+	background: rgb(216,244,249);
+	border: 20px solid rgb(68, 128, 188);
+	border-radius: 20px;
+	position: relative;
+}
+
+.snakeHead{
+	background-image: url(../fonts/snakeHead.svg);
+	background-size: cover;
+}
+.snakeBody{
+	background-color: #9ddbb1;
+	border-radius: 50%;
+}
+.food{
+	background-image: url(../fonts/pingguo.svg);
+	background-size: cover; 
+}
+#tips {
+	margin-left: 20px;
+	font-weight: 600;
+}
