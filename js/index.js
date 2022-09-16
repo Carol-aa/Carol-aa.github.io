@@ -44,22 +44,22 @@ function Snake() {
 		left: {
 			x: -1,
 			y: 0,
-			rotate: 180 //蛇头在不同的方向中应该进行旋转，要不始终是向右
+			rotate: 90 //蛇头在不同的方向中应该进行旋转，要不始终是向右
 		},
 		right: {
 			x: 1,
 			y: 0,
-			rotate: 0
+			rotate: -90
 		},
 		up: {
 			x: 0,
 			y: -1,
-			rotate: -90
+			rotate: 180
 		},
 		down: {
 			x: 0,
 			y: 1,
-			rotate: 90
+			rotate: 0
 		}
 	}
 }
